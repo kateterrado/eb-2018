@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>The Margins-Article</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+ <link rel="stylesheet" href="css/EastBoston_styles.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src='lib/crossfilter.js' defer></script>
+  <script src='lib/d3.js' defer></script>
+  <script src='modules/mapRoutes.js' defer></script>
+  <script src='modules/barChart.js' defer></script>
+  <script src='script.js' defer></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+
+</head>
+<body>
+
+<!-- Hamburger menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <nav role="navigation" class="EastBoston_nav" >
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+        <a href="#" ><li style="font-size:4rem">Article 1</li></a>
+        <a href="#"><li style="font-size:4rem">Article 2</li></a>
+        <a href="#"><li style="font-size:4rem">Article 3</li></a>
+        <a href="#"><li style="font-size:4rem">Article 4</li></a>
+        <a href="#"><li style="font-size:4rem">Article 5</li></a>
+        <a href="#"><li style="font-size:4rem">Article 6</li></a>
+
+    </ul>
+  </div>
+</nav>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column EastBoston">
+        <h1 class="EastBoston_head">Ebbs & Flows of East Boston</h1>
+
+          <p>Cities and towns are not closed economic systems. Workers who live in one town may work in a neighboring town or travel long distances to find employment. Jobs in East Boston are filled by a combination of residents and commuters. This daily ebb and flow impacts issues from housing to transportation.</p>
+          <h5 class="EastBoston_byline">By Kate Terrado</h5>
+
+          <div class='plot' id='plot-1'>
+            <svg width="960" height="600"></svg>
+          </div>
+
+
+
+
+            <!-- <div id='charts'>
+              <div id='hour-chart' class='chart'>
+                <div class='title'>Time of Day</div>
+              </div>
+              <div id='delay-chart' class='chart'>
+                <div class='title'>Arrival Performance (min.)</div>
+              </div>
+              <div id='distance-chart' class='chart'>
+                <div class='title'>Distance (mi.)</div>
+              </div>
+              <div id='date-chart' class='chart'>
+                <div class='title'>Date</div>
+              </div>
+            </div>
+            <aside id='totals'><span id='active'>-</span> of <span id='total'>-</span> flights selected.</aside>
+            <div id='lists'>
+              <div id='flight-list' class='list'></div>
+            </div> -->
+
+
+        <h2 class="EastBoston_head">5.1% walk or bike<br>
+57.8% take public transportation<br>
+34.4% use a car, truck, or van<br>
+2.7% other or work from home<br>
+</h2>
+
+
+      </div>
+  </div>
+</div>
+
+<h6 class="EastBoston_footer"><span class="EastBoston_footer">Visualizing Eastie</span> is a project of the <a href="https://www.northeastern.edu/visualization/">Information Design and Visualization program</a> at Northeastern University. © 2018</h6>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
