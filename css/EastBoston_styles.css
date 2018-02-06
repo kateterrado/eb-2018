@@ -159,6 +159,12 @@ ul#menu li
 /* Basic text styles for The Margina
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+body {
+  font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
 h1.EastBoston_head {
     font-family: "GrifoL-Bold","Georgia",serif;
     font-size: 8rem;
@@ -240,6 +246,40 @@ a:active {
       stroke-opacity: 0;
       pointer-events: all;
     }
+
+
+    #sections > div{
+    	opacity: .3
+    }
+
+    #sections div.graph-scroll-active{
+    	opacity: 1;
+    }
+
+    #container{
+  position: relative;
+}
+
+#sections{
+  width: 250px;
+}
+
+#graph{
+  margin-left: 40px;
+  width: 650px;
+  position: sticky;
+  top: 0px;
+  float: right;
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
 
 
 
