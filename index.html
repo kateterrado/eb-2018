@@ -5,14 +5,13 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>The Margins-Article</title>
+  <title>Living & Working</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,15 +27,6 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <script src='lib/crossfilter.js' defer></script>
-  <script src='lib/d3.js'></script>
-  <!-- <script src='modules/mapRoutes.js' defer></script>
-  <script src='modules/barChart.js' defer></script> -->
-  <script src='data/boston_rodents.json'></script>
-  <script src='data/boston_neighborhoods.json'></script>
-  <script src='https://d3js.org/topojson.v1.min.js'></script>
-
 
 </head>
 <body>
@@ -75,236 +65,41 @@
   <div class="container">
     <div class="row">
       <div class="column EastBoston">
-        <h1 class="EastBoston_head">Ebbs & Flows of East Boston</h1>
+        <h1 class="EastBoston_head">Living & Working: East Boston</h1>
 
-          <p>Cities and towns are not closed economic systems. Workers who live in one town may work in a neighboring town or travel
-            long distances to find employment. Jobs in East Boston are filled by a combination of residents and commuters. This daily
-            ebb and flow impacts issues from housing to transportation.<br>
+          <p>Cities and towns are not closed systems. Individuals who live in East Boston may work in a neighboring town or travel longer distances to find jobs. With a long history as a hub for transporation, East Boston is the host to many employees that may live elsewhere. Jobs are filled by a combination of residents and commuters. These maps show residential and employment density with regards East Boston. </p>
 
-          </p>
-          <h5 class="EastBoston_byline">By Kate Terrado</h5>
+          <hr>
 
-          <!-- <div class='plot' id='plot-1'>
-            <svg width="960" height="600"></svg>
-          </div> -->
+          <h2 class="EastBoston_head">Where people who live in East Boston work.</h2>
 
+
+          <div class="group">
+    <div class="left">
+        <img src="work-that-live.svg" style='max-width: 600px'>
+    </div>
+    <div class="right">
+                  <p>The majority of East Boston residents work in Boston, with a large percentage working in Downtown Boston. Other areas with a high representation of East Boston residents are Cambridge, Newton, Chelsea, Waltham, and Somerville. Over half of all East Boston residents take the subway to work, the highest percentage of any Boston neighborhood.</p>
+    </div>
+</div>
 
 <hr>
 
+        <h2 class="EastBoston_head">Where people who work in East Boston live.</h2>
 
-<div id='container' class='container-1'>
-  <div id='graph'></div>
-  <div id='sections'>
-    <div>
-      <h2 class="EastBoston_head">Subhead</h2>
-      <span class='mono'>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempor ipsum eu pulvinar. Vestibulum pellentesque euismod finibus. Nullam et mollis dolor, nec aliquet risus. Ut non convallis turpis, quis rhoncus justo. Donec dignissim a massa vitae aliquam. Quisque rutrum nisi leo, vel semper risus luctus non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tincidunt eget eros eget ultricies. Vestibulum laoreet nec nisi in vestibulum. Maecenas dapibus nisi ut posuere eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        <div class="group">
+          <div class="left">
+            <img src="live-that-work.svg" style='max-width: 600px'>
+          </div>
 
-  </div>
-<p><p><p><p>
-    <div>
-      <h2 class="EastBoston_head">Subhead</h2>
-      <span class='mono'>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempor ipsum eu pulvinar. Vestibulum pellentesque euismod finibus. Nullam et mollis dolor, nec aliquet risus. Ut non convallis turpis, quis rhoncus justo. Donec dignissim a massa vitae aliquam. Quisque rutrum nisi leo, vel semper risus luctus non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tincidunt eget eros eget ultricies. Vestibulum laoreet nec nisi in vestibulum. Maecenas dapibus nisi ut posuere eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-    </div>
-
-<p><p><p><p>
-    <div>
-      <h2 class="EastBoston_head">Subhead</h2>
-      <span class='mono'>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempor ipsum eu pulvinar. Vestibulum pellentesque euismod finibus. Nullam et mollis dolor, nec aliquet risus. Ut non convallis turpis, quis rhoncus justo. Donec dignissim a massa vitae aliquam. Quisque rutrum nisi leo, vel semper risus luctus non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tincidunt eget eros eget ultricies. Vestibulum laoreet nec nisi in vestibulum. Maecenas dapibus nisi ut posuere eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-    </div>
-<p><p><p><p>
-    <div>
-      <h2 class="EastBoston_head">Subhead</h2>
-      <span class='mono'>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempor ipsum eu pulvinar. Vestibulum pellentesque euismod finibus. Nullam et mollis dolor, nec aliquet risus. Ut non convallis turpis, quis rhoncus justo. Donec dignissim a massa vitae aliquam. Quisque rutrum nisi leo, vel semper risus luctus non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tincidunt eget eros eget ultricies. Vestibulum laoreet nec nisi in vestibulum. Maecenas dapibus nisi ut posuere eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-    </div>
-
-  </div>
-
+          <div class="right">
+            <p>Many jobs within East Boston are held by residents from outside of the city. Individuals from Revere, Lynn, Chelsea, Winthrop, and Everett contribute to the work force of East Boston. About 44% of these jobs are in transportation and warehousing, while 28% are in public administration.
+            </p>
+            <p>
+            These maps use data from the Census Transportation Planning Program. The CTPP is a State DOT funded, cooperative program that produces special tabulations of American Community Survey (ACS) data that have enhanced value for transportation planning, analysis and strategic direction.​
+</p>
 </div>
-
-<p><p><p><p>
-
-<div id='container' class='container-2'>
-  <div id='graph'></div>
-
-  <div id='sections'>
-    <div>
-      <h2 class="EastBoston_head">Data Source</h2>
-      <span class='mono'>The</span> CTPP data product based on 2006 – 2010 5-year American Community Survey (ACS) Data is designed to help transportation analysts and planners understand where people are commuting to and from, and how they get there. The information is organized by where workers live, where they work, and by the flow between those places.
-    </div>
-
-
-  </div>
-
-
 </div>
-
-
-
-<script src="lib/d3v4+jetpack.js"></script>
-<script src="lib/graph-scroll.js"></script>
-<script>
-
-var oldWidth = 0
-function render(){
-  if (oldWidth == innerWidth) return
-  oldWidth = innerWidth
-
-  var width = height = d3.select('#graph').node().offsetWidth
-  var r = 40
-
-
-  if (innerWidth <= 925){
-    width = innerWidth
-    height = innerHeight*.7
-  }
-
-  // return console.log(width, height)
-
-  // var width = 960;
-  // var height = 600;
-
-  var svg = d3.select('#graph').html('')
-    .append('svg')
-    .attr( "width", width )
-    .attr( "height", height );
-
-  var g = svg.append( "g" );
-
-  var gs = d3.graphScroll()
-      .container(d3.select('.container-1'))
-      .graph(d3.selectAll('container-1 #graph'))
-      .eventId('uniqueId1')  // namespace for scroll and resize events
-      .sections(d3.selectAll('.container-1 #sections > div'))
-      // .offset(innerWidth < 900 ? innerHeight - 30 : 200)
-      .on('active', function(i){
-        var albersProjection = d3.geoAlbers()
-            .scale( 190000 )
-            .rotate( [71.057,0] )
-            .center( [0, 42.313] )
-            .translate( [width/2,height/2] );
-
-        var geoPath = d3.geoPath()
-            .projection( albersProjection );
-
-        g.selectAll( "path" )
-            .data( neighborhoods_json.features )
-            .enter()
-            .append( "path" )
-            .attr( "fill", "#EDEDED" )
-            .attr( "stroke", "#BFBFBF")
-            .attr( "stroke-width", ".25")
-            .attr( "d", geoPath );
-      })
-
-
-  var svg2 = d3.select('.container-2 #graph').html('')
-    .append('svg')
-    .attr( "width", width )
-    .attr( "height", height );
-
-  var path = svg2.append('path')
-
-  var gs2 = d3.graphScroll()
-      .container(d3.select('.container-2'))
-      .graph(d3.selectAll('.container-2 #graph'))
-      .eventId('uniqueId2')  // namespace for scroll and resize events
-      .sections(d3.selectAll('.container-2 #sections > div'))
-      .on('active', function(i){
-        var albersProjection = d3.geoAlbers()
-            .scale( 190000 )
-            .rotate( [71.057,0] )
-            .center( [0, 42.313] )
-            .translate( [width/2,height/2] );
-        //
-        var geoPath = d3.geoPath()
-            .projection( albersProjection );
-        //
-        // g.selectAll( "path" )
-        //     .data( neighborhoods_json.features )
-        //     .enter()
-        //     .append( "path" )
-        //     .attr( "fill", "#EDEDED" )
-        //     .attr( "stroke", "#BFBFBF")
-        //     .attr( "stroke-width", ".25")
-        //     .attr( "d", geoPath )
-        //     .style("opacity", .25);
-        //
-        //     let voronoi = d3.voronoi()
-        //         .extent([[-1, -1], [width + 1, height + 1]]);
-
-
-            var rodents = svg.append( "g" );
-
-                rodents.selectAll( "path" )
-                    .data( rodents_json.features )
-                    .enter()
-                    .append( "path" )
-                    .attr( "fill", "#BFBFBF" )
-                    .attr( "stroke", "#FFFFFF" )
-                    .attr( "d", geoPath )
-                    .attr("class","incident");
-                    // .on("mouseover", function(d){
-                    //     d3.select("h2").text(d.properties.LOCATION_STREET_NAME);
-                    //     d3.select(this).attr("class","incident hover");
-                    // })
-                    // .on("mouseout", function(d){
-                    //     d3.select("h2").text("");
-                    //     d3.select(this).attr("class","incident");
-                    // });
-
-                    path.transition().duration(1000);
-
-
-      })
-
-  d3.select('#source')
-      .styles({'margin-bottom': window.innerHeight - 450 + 'px', padding: '100px'})
-}
-render()
-d3.select(window).on('resize', render)
-
-
-
-
-
-
-</script>
-
-
-
-
-
-            <!-- <div id='charts'>
-              <div id='hour-chart' class='chart'>
-                <div class='title'>Time of Day</div>
-              </div>
-              <div id='delay-chart' class='chart'>
-                <div class='title'>Arrival Performance (min.)</div>
-              </div>
-              <div id='distance-chart' class='chart'>
-                <div class='title'>Distance (mi.)</div>
-              </div>
-              <div id='date-chart' class='chart'>
-                <div class='title'>Date</div>
-              </div>
-            </div>
-            <aside id='totals'><span id='active'>-</span> of <span id='total'>-</span> flights selected.</aside>
-            <div id='lists'>
-              <div id='flight-list' class='list'></div>
-            </div> -->
-
-<p><p><p><p>
-
-        <h2 class="EastBoston_head">5.1% walk or bike<br>
-57.8% take public transportation<br>
-34.4% use a car, truck, or van<br>
-2.7% other or work from home<br>
-</h2>
-
-
 
 
       </div>
