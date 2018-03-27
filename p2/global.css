@@ -47,3 +47,21 @@ button:hover{
   background-color: #111;
   color: #fff;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* .sticky + .container {
+  padding-top: 200px;
+} */
+
+#navbar {
+  background: #fff;
+   height: 40px;
+   z-index: 150;
+   margin-bottom: -80px;
+   box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}

@@ -1,48 +1,13 @@
-(function() {
-  var $imgs = $('#gallery img');
-  var $buttons = $('#buttons');
-  var tagged = {};
+window.onscroll = function() {myFunction()};
 
-  $imgs.each(function() {
-    var img = this;
-    var tags = $(this).data('tags');
+var navbar = document.getElementById("navbar");
 
-    if (tags) {
-      tags.split(',').forEach(function(tagName) {
-        if (tagged[tagName] == null) {
-          tagged[tagName] = [];
-        }
-        tagged[tagName].push(img);
-      })
-    }
-  })
+var sticky = navbar.offsetTop;
 
-  $('<button/>', {
-    text: 'Show All',
-    class: 'active',
-    click: function() {
-      $(this)
-        .addClass('active')
-        .siblings()
-        .removeClass('active');
-      $imgs.show();
-    }
-  }).appendTo($buttons);
-
-  $.each(tagged, function(tagName) {
-    var $n = $(tagged[tagName]).length;
-    $('<button/>', {
-      text: tagName + '(' + $n + ')',
-      click: function() {
-        $(this)
-          .addClass('active')
-          .siblings()
-          .removeClass('active');
-        $imgs
-          .hide()
-          .filter(tagged[tagName])
-          .show();
-      }
-    }).appendTo($buttons);
-  });
-}())
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
